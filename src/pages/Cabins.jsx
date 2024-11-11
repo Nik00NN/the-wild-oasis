@@ -19,7 +19,7 @@ const Cabins = () => {
         <CabinTable />
 
         <Button onClick={() => setShowForm((show) => !show)}>
-          Add new cabin
+          {showForm ? "Close form" : "Add a new cabin"}
         </Button>
         {showForm && <CreateCabinForm />}
       </Row>
