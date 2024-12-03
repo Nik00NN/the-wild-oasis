@@ -1,5 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { HiOutlineHome, HiOutlineHomeModern } from "react-icons/hi2";
+import {
+  HiOutlineHome,
+  HiOutlineHomeModern,
+  HiOutlineWrench,
+} from "react-icons/hi2";
 import styled from "styled-components";
 
 const NavList = styled.ul`
@@ -61,6 +65,12 @@ const MainNav = () => {
           <StyledNavLink to="/cabins">
             <HiOutlineHomeModern />
             <span>Cabins</span>
+          </StyledNavLink>
+        </li>
+        <li>
+          <StyledNavLink to="/settings">
+            <HiOutlineWrench />
+            <span>Settings</span>
           </StyledNavLink>
         </li>
       </NavList>
